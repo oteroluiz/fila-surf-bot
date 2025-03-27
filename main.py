@@ -174,7 +174,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "/help - Mostrar comandos"
     )
 
-BOT_TOKEN = "7571569913:AAHm0z1pkYUhIkxmRzoukbNKptWbNFmFDqA"
+BOT_TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 def main():
     app = ApplicationBuilder().token(BOT_TOKEN).build()
